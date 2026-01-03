@@ -2,7 +2,7 @@
 
 2.1 뮤텍스 (Mutex: Mutual Exclusion)
 
-<details> <summary>▶ 뮤텍스 상세 내용 보기 (정의, 소유권, 특징)</summary>
+<details> <summary> 뮤텍스 상세 내용 보기 (정의, 소유권, 특징)</summary>
 
     개념: 공유 자원을 점유하기 위한 '열쇠(Key)'
 
@@ -19,7 +19,7 @@
 </details>
 2.2 세마포어 (Semaphore)
 
-<details> <summary>▶ 세마포어 상세 내용 보기 (정의, 연산, 종류)</summary>
+<details> <summary> 세마포어 상세 내용 보기 (정의, 연산, 종류)</summary>
 
     개념: 가용한 공유 자원의 개수를 나타내는 '신호기/계수기'
 
@@ -42,7 +42,7 @@
 </details>
 2.3 뮤텍스 vs 세마포어 핵심 비교
 
-<details> <summary>▶ 비교 표 확인하기 (클릭하여 펼치기)</summary>
+<details> <summary> 비교 표 확인하기 (클릭하여 펼치기)</summary>
 비교 항목	뮤텍스 (Mutex)	세마포어 (Semaphore)
 핵심 목적	상호 배제 (1:1)	자원 개수 관리 (1:N)
 소유권	있음 (Lock을 잡은 주체만 해제 가능)	없음 (누구나 Signal을 보내 해제 가능)
@@ -51,9 +51,11 @@
 사용 범위	보통 프로세스 내 스레드 간 사용	시스템 전체(여러 프로세스 간) 사용 가능
 
 </details>
+
+</details>
 2.4 시험 대비 심화 개념
 
-<details> <summary>▶ 심화 개념 (우선순위 역전, 데드락, 사용 시나리오)</summary>
+<details> <summary> 심화 개념 (우선순위 역전, 데드락, 사용 시나리오)</summary>
 ① 우선순위 역전 (Priority Inversion)
 
     현상: 낮은 우선순위 TL​이 뮤텍스를 잡고 있는데, 중간 우선순위 TM​이 CPU를 선점하여, 높은 우선순위 TH​가 무한정 대기하는 현상입니다.
@@ -75,7 +77,7 @@
 </details>
 2.5 실전 체크업 문제 & 해설
 
-<details> <summary>▶ 문제 풀기 및 정답 확인하기</summary>
+<details> <summary> 문제 풀기 및 정답 확인하기</summary>
 
 [문제 1] OX 퀴즈
 
